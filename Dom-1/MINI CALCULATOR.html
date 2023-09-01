@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MINI CALCULATOR </title>
+
+    <style>
+
+        main
+        {
+            width: 30%  ;
+
+            margin: auto  ;
+
+            margin-top: 20%  ;
+        }
+        main > div
+        {
+            display: flex  ;
+
+            margin-top: 4%  ;
+
+            justify-content: space-evenly  ;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <div>
+            <input type="number" placeholder="enter 1st Number">
+            <input type="number" placeholder="enter 2nd Number">
+        </div>
+        
+        <div>
+            <button> Add </button>
+    
+            <button> Subtract </button>
+    
+            <button> Multiply </button>
+    
+            <button> Divide </button>
+        </div>
+    </main>    
+
+</body>
+
+<script>
+
+let arr = document.getElementsByTagName("input")  ;
+
+let brr = document.getElementsByTagName("button")  ;
+
+for( let i = 0 ; i < brr.length ; i++ )
+{
+    brr[i].addEventListener( "click" , () =>
+    {
+        if( i == 0 )
+        {
+            alert( +arr[0].value + +arr[1].value )  ;
+        }
+        else if( i == 1 )
+        {
+            alert( +arr[0].value - +arr[1].value )  ;
+        }
+        else if( i == 2 )
+        {
+            alert( +arr[0].value * +arr[1].value )  ;
+        }
+        else
+        {
+            alert( +arr[0].value / +arr[1].value )  ;
+        }
+    }  )  ;
+}
+
+</script>
+
+</html>
