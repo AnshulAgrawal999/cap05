@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Document</title>
+  <title> Masai School Application </title>
 </head>
 <body>
   <h1>Masai School Application</h1>
@@ -15,22 +15,25 @@
   </select>
   <button>Apply</button>
 </body>
-</html>
+
 <script>
+  
+  let button = document.getElementsByTagName( "button" )  ;
+  
+  let heading = document.getElementById( "display" )  ;
+  
+  
+  button[0].addEventListener( "click" , () => {
 
-let name = document.getElementById( "name" ).value  ;
+    let name = document.getElementById( "name" ).value  ;
+  
+    let gender = document.getElementById( "gender" ).value  ;
 
-let gender = document.getElementById( "gender" ).value  ;
-
-let button = document.getElementsByTagName( "button" )  ;
-
-let heading = document.getElementById( "display" )  ;
-
-
-button[0].addEventListener( "click" , () => {
-
-    console.log( name )  ;
     heading.innerHTML = name + gender  ;
-} )  ;    
+    
+  } )  ;    
+  
+  </script>
 
-</script>
+</html>
+
