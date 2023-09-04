@@ -27,29 +27,57 @@
 
 	<script type="text/javascript">
 
+		let dname = document.getElementById( "dName" )  ;
+
+		let dgender = document.getElementById( "dGender" )  ;
+
+		let demail = document.getElementById( "dEmail" )  ;
+
+		let dmobile = document.getElementById( "dMobile" )  ;
         
 		function showName() {
 			// Show filled name inside h1
+
+			let name = document.getElementById( "name" ).value  ;
+
+			dname.textContent = name  ;
 		}
 
 		function showGender() {
 			// Show the selected gender inside h2
+
+			let gender = document.getElementById( "gender" ).value  ;
+
+			dgender.textContent = gender  ;
 		}
 
 		function showEmail() {
 			// Show the filled email inside h3
+
+			let email = document.getElementById( "email" ).value  ;
+
+			demail.textContent = email  ;
 		}
 
 		function showMobile() {
 			// Show the filled mobile inside h4
+
+			let mobile = document.getElementById( "mobile" ).value  ;
+
+			dmobile.textContent = mobile  ;
 		}
 
 		function resetForm() {
+
 			// Reset all the form elements to default values (blank "")
+
+
 		}
 
 		function resetDisplay() {
+
 			// Reset all the headings (h1, h2, h3, h4) to blank values
+
 		}
 
 	</script>
