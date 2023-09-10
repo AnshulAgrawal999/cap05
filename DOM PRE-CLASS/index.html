@@ -9,9 +9,27 @@
 
 <body>
     
+    <input type="text" id="myInput" >
+
+    <button id="myButton" onclick="handleSumit()"> Submit </button>
+
+    <h2></h2>
+
 </body>
 
 <script>
+  let myInput = document.getElementById( "myInput" )  ;
+
+  let myButton = document.getElementById( "myButton" )  ;
+
+  let h2 = document.getElementsByTagName( "h2" )  ;
+
+  function handleSumit( )
+  {
+    alert( myInput.value )  ;
+
+    h2[0].innerText = `Entered value: ${myInput.value}`  ;
+  }
 
 </script>
 
